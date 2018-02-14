@@ -11,7 +11,7 @@
      <h1 style="background-color:gainsboro;">  <%= title %> </h1>
     </div>
 
-    <form method="POST">
+    <form method="POST" action="/thankyou">
             <div class="form-row col-md-offset-3">
               <div class="form-group col-md-4">
                 <label for="firstName">First Name</label>
@@ -25,7 +25,7 @@
             <div class="form-row col-md-6 col-md-offset-3">
             <div class="form-group">
               <label for="inputAddress">Email</label>
-              <input type="email" class="form-control" id="inputAddress" value = <%=email%>>
+              <input type="email" class="form-control" id="inputAddress" readonly=true value = <%=email%>>
             </div>
             </div>
             <div class="form-row col-md-6 col-md-offset-3">

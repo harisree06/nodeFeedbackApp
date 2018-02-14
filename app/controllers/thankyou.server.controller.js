@@ -5,6 +5,7 @@
 exports.render = function (req, res) {
     //make a reference to the session object
     let session = req.session;
+
     //check if username is stored in session object
     if (session.username) {
         res.render('thankyou', {
