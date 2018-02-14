@@ -1,6 +1,6 @@
 exports.render = function (req, res) {
     //make a reference to the session object
-    var session = req.session;
+    let session = req.session;
     if (session.username) {
        
         res.render('feedback',{

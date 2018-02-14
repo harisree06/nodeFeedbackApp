@@ -21,7 +21,7 @@ console.log('Server running at http://localhost:3000/');
 // Use the module.exports property to expose our Express application instance for external usage
 module.exports = app;
 
-var express = require("express");
-var appNew = express();
+let express = require("express");
+let appNew = express();
 
 appNew.use(express.static('public'));

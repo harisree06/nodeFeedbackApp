@@ -3,9 +3,9 @@
 //You'll need to use Express routing functionality to utilize the controller
 exports.render = function (req, res) {
     //read the username from body property of request object
-    var username = req.body.username;
+    let username = req.body.username;
     //make a reference to the session object
-    var session = req.session;
+    let session = req.session;
     //store username in session object
     session.username = username;
     console.log("In index function - User name = " + session.username);
